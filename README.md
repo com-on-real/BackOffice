@@ -15,4 +15,4 @@
 9. live chat
 10. 2FA
 11. SMS client notifications (with rpi+gsm or swisscom api)
-# Give me your money for buying a micro to flo [PayPal :)](paypal.me/ysavary)
+# Give me your money for buying a micro to flo [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/ysavary)
