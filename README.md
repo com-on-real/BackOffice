@@ -16,7 +16,7 @@
 10. 2FA
 11. SMS client notifications (with rpi+gsm or swisscom api)
 
-# Liste des fonctions à ajouter pour le manager
+# Liste des fonctions à ajouter pour la partie admin sur le manager
 - Système de gestion des sites clients avec leur infos personnel ainsi que toute info relative à leur hébergement( chemin site, bdd, mail, ss-domaine)
 - Gestion des utilisateur MySQL, Mail, FTP, manager
 - Interaction avec les fichier sur les sites depuis le manager (webDAV)
