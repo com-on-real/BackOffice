@@ -15,4 +15,11 @@
 9. live chat
 10. 2FA
 11. SMS client notifications (with rpi+gsm or swisscom api)
+
+# Liste des fonctions à ajouter pour le manager de Com'On Réal
+- Système de gestion des sites clients avec leur infos personnel ainsi que toute info relative à leur hébergement( chemin site, bdd, mail, ss-domaine)
+- Gestion des utilisateur MySQL, Mail, FTP, manager
+- Interaction avec les fichier sur les sites depuis le manager (webDAV)
+- Affichage des infos system (RAM, HDD, CPU, NET, BACKUP FTP, update(apt))
+
 # Give me your money for buying a micro to flo [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://paypal.me/ysavary)
