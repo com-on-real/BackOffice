@@ -13,3 +13,17 @@ function calendarView()
 	require('view/calendar.php');
 	require('view/template/dashboard.php');
 }
+
+function loginView()
+{
+	require('array.php');
+	require('view/login.php');
+	require('view/template/noConnect.php');
+}
+
+function registerView()
+{
+	require('array.php');
+	require('view/register.php');
+	require('view/template/noConnect.php');
+}

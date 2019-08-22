@@ -10,8 +10,12 @@ try
 {
 	switch ($_GET['page'])
 	{
-		default:
-			indexView();
+		case 'login':
+			loginView();
+		break;
+
+		case 'register':
+			registerView();
 		break;
 
 		case 'index':
@@ -21,10 +25,17 @@ try
 		case 'calendar':
 			calendarView();
 		break;
+
+		default:
+			throw new Exception("Cette page n'existe pas", 404);
+		break;
 	}
 }
-catch (Exeption $e)
+catch (Exception $e)
 {
-
+	$title = $e->getMessage();
+	$description = 'Erreur ';
+	$description .= $e->getCode();
+	require('view/template/dashboard.php');
 }
 ?>
