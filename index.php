@@ -21,6 +21,10 @@ try
 		case 'calendar':
 			calendarView();
 		break;
+
+		case 'ticket':
+			ticketView();
+		break;
 	}
 }
 catch (Exeption $e)
