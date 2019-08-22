@@ -1,6 +1,5 @@
 # TODO LIST :)
 
-## This project is the same with [FH-Front](https://github.com/com-on-real/FH-Front) (share backoffice and backend only the front may be diffrent :))
 
 ### Client/admin area function and module
 
