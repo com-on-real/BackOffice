@@ -31,9 +31,6 @@ try
 			case 'calendar':
 				calendarView();
 			break;
-			case 'calendar':
-				calendarView();
-			break;
 			case 'ticket':
 				ticketView();
 			break;
