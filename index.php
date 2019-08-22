@@ -31,6 +31,12 @@ try
 			case 'calendar':
 				calendarView();
 			break;
+			case 'calendar':
+				calendarView();
+			break;
+			case 'ticket':
+				ticketView();
+			break;
 
 			default:
 				throw new Exception("Cette page n'existe pas", 404);
