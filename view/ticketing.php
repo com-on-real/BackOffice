@@ -29,12 +29,10 @@ ob_start();
           <button type="button" class="btn btn-block btn-success btn-sm">normal</button>
           <button type="button" class="btn btn-block btn-warning btn-sm">Haute</button>
           <button type="button" class="btn btn-block btn-danger btn-sm">Urgent</button>
-
         </div>
         <div class="form-group">
           <label for="LogsFile">Fichier de logs</label>
           <input type="file" id="LogsFile">
-
           <p class="help-block">non requis</p>
         </div>
         <div class="checkbox">
@@ -44,7 +42,6 @@ ob_start();
         </div>
       </div>
       <!-- /.box-body -->
-
       <div class="box-footer">
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
@@ -52,10 +49,8 @@ ob_start();
   </div>
   <!-- /.box -->
 
-
 </div>
 <!-- /.box -->
-
 <div class="col-xs-12">
   <div class="box">
     <div class="box-header">
