@@ -8,7 +8,7 @@ App\Autoloader::register();
 require('controller/controller.php');
 
 // Test de modification par florian
-
+if (0)
 try
 {
 	if (empty($_SESSION))
