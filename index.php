@@ -1,4 +1,5 @@
 <?php
+session_start();
 $debug = 'simple'; // all / simple / false
 require('ini.php');
 
@@ -8,27 +9,33 @@ require('controller/controller.php');
 
 try
 {
-	switch ($_GET['page'])
+	if (empty($_SESSION))
+		loginView();
+	else
 	{
-		case 'login':
-			loginView();
-		break;
+		switch ($_GET['page'])
+		{
+			case 'index':
+				indexView();
+			break;
+			
+			// Connection
+			case 'login':
+				loginView();
+			break;
+			case 'register':
+				registerView();
+			break;
 
-		case 'register':
-			registerView();
-		break;
+			// Page
+			case 'calendar':
+				calendarView();
+			break;
 
-		case 'index':
-			indexView();
-		break;
-
-		case 'calendar':
-			calendarView();
-		break;
-
-		default:
-			throw new Exception("Cette page n'existe pas", 404);
-		break;
+			default:
+				throw new Exception("Cette page n'existe pas", 404);
+			break;
+		}
 	}
 }
 catch (Exception $e)
