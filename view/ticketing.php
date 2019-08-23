@@ -28,7 +28,7 @@ ob_start();
                             style="resize: none"></textarea>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-3">
                             <div class="form-group">
                                 <label for="btnprio">Priorité</label>
                                 <button type="button" class="btn btn-block btn-success btn-sm">normal</button>
@@ -36,11 +36,26 @@ ob_start();
                                 <button type="button" class="btn btn-block btn-danger btn-sm">Urgent</button>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-3">
+                            <div class="dropdown show">
+                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Type de service
+                                </a>
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Compte</a>
+                                    <a class="dropdown-item" href="#">hebergement web</a>
+                                    <a class="dropdown-item" href="#">VPS</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
                             <div class="box box-solid">
                                 <div class="box-body">
                                     <div class="form-group">
-                                        <label for="LogsFile">Fichier de logs</label>
+                                        <label for="LogsFile">Capture d'écran(s)</label>
                                         <input type="file" id="LogsFile">
                                         <p class="help-block">non requis</p>
                                     </div>
@@ -59,37 +74,37 @@ ob_start();
         <!-- /.box -->
     </div>
     <div class="row">
-    <div class="col-md-4">
-        
-        <div class="info-box bg-aqua">
-            <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+        <div class="col-md-3">
 
-            <div class="info-box-content">
-              <span class="info-box-text">Nombre de ticket</span>
-              <span class="info-box-number">41,410</span>
-            </div>
-            <!-- /.info-box-content -->
-          </div>
-          <div class="info-box bg-green">
-            <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
+            <div class="info-box bg-aqua">
+                <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">Nombre de ticket résolus</span>
-              <span class="info-box-number">41,410</span>
+                <div class="info-box-content">
+                    <span class="info-box-text">Nombre de ticket</span>
+                    <span class="info-box-number">41,410</span>
+                </div>
+                <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box-content -->
-          </div>
-          <div class="info-box bg-red">
-            <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
+            <div class="info-box bg-green">
+                <span class="info-box-icon"><i class="fa fa-bookmark-o"></i></span>
 
-            <div class="info-box-content">
-              <span class="info-box-text">Nombre de ticket ouvert/non résolus</span>
-              <span class="info-box-number">41,410</span>
+                <div class="info-box-content">
+                    <span class="info-box-text">Nombre de ticket résolus</span>
+                    <span class="info-box-number">41,410</span>
+                </div>
+                <!-- /.info-box-content -->
             </div>
-            <!-- /.info-box-content -->
-          </div>
-          <!-- /.info-box -->
-    </div>
+            <div class="info-box bg-red">
+                <span class="info-box-icon"><i class="fa fa-comments-o"></i></span>
+
+                <div class="info-box-content">
+                    <span class="info-box-text">Nombre de ticket ouvert/non résolus</span>
+                    <span class="info-box-number">41,410</span>
+                </div>
+                <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+        </div>
     </div>
 </div>
 <!-- /.box -->
@@ -134,14 +149,15 @@ ob_start();
                             <div class="progress progress-xs">
                                 <div class="progress-bar progress-bar-info" style="width: 0%"></div>
                             </div>
-                        <span class="badge bg-blue">0%</span></td>
+                            <span class="badge bg-blue">0%</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><button type="button" class="btn btn-block btn-primary btn-xs" data-toggle="modal"
                                 data-target="#modal-default">View</button>
                             <button type="button" class="btn btn-block btn-info btn-xs" data-toggle="modal"
-                                data-target="#modal-success">Se l'assigner</button></td> 
-                                <td>Alexander Pierce</td>
+                                data-target="#modal-success">Se l'assigner</button></td>
+                        <td>Alexander Pierce</td>
                         <td>mfd_001</td>
                         <td><span class="label label-warning">en cours</span></td>
                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
@@ -149,14 +165,15 @@ ob_start();
                             <div class="progress progress-xs">
                                 <div class="progress-bar progress-bar-info" style="width: 25%"></div>
                             </div>
-                        <span class="badge bg-blue">25%</span></td>
+                            <span class="badge bg-blue">25%</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><button type="button" class="btn btn-block btn-primary btn-xs" data-toggle="modal"
                                 data-target="#modal-default">View</button>
                             <button type="button" class="btn btn-block btn-info btn-xs" data-toggle="modal"
-                                data-target="#modal-success">Se l'assigner</button> </td> 
-                                <td>Bob Doe</td>
+                                data-target="#modal-success">Se l'assigner</button> </td>
+                        <td>Bob Doe</td>
                         <td>FH-001</td>
                         <td><span class="label label-primary">en attente</span></td>
                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
@@ -164,22 +181,24 @@ ob_start();
                             <div class="progress progress-xs">
                                 <div class="progress-bar progress-bar-info" style="width: 55%"></div>
                             </div>
-                        <span class="badge bg-blue">55%</span></td>
+                            <span class="badge bg-blue">55%</span>
+                        </td>
                     </tr>
                     <tr>
                         <td><button type="button" class="btn btn-block btn-primary btn-xs" data-toggle="modal"
                                 data-target="#modal-default">View</button>
                             <button type="button" class="btn btn-block btn-info btn-xs" data-toggle="modal"
-                                data-target="#modal-success">Se l'assigner</button> </td> 
-                                <td>Mike Doe</td>
-                        <td>gen-001</td>
+                                data-target="#modal-success">Se l'assigner</button> </td>
+                        <td>Mike Doe</td>
+                        <td>staff-001</td>
                         <td><span class="label label-danger">non Assigner</span></td>
                         <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
                         <td>
                             <div class="progress progress-xs">
                                 <div class="progress-bar progress-bar-success" style="width: 100%"></div>
                             </div>
-                        <span class="badge bg-green">100%</span></td>
+                            <span class="badge bg-green">100%</span>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -242,10 +261,10 @@ ob_start();
                     <span aria-hidden="true">×</span></button>
                 <h4 class="modal-title">Le ticket n° vous a bien ete assigner!</h4>
             </div>
-        <!-- /.modal-content -->
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal-dialog -->
-</div>
 </div>
 
 <?php
