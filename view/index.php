@@ -14,8 +14,8 @@ ob_start();
             <span class="info-box-icon bg-aqua"><i class="ion ion-ios-gear-outline"></i></span>
 
             <div class="info-box-content">
-              <span class="info-box-text">HDD usage</span>
-              <span class="info-box-number">90<small>%</small></span>
+              <span class="info-box-text">Ticket ouvert</span>
+              <span class="info-box-number">154</span>
             </div>
             <!-- /.info-box-content -->
           </div>

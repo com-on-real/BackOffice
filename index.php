@@ -9,7 +9,7 @@ require('controller/controller.php');
 
 try
 {
-	if (empty($_SESSION))
+	if (!empty($_SESSION))
 		loginView();
 	else
 	{
